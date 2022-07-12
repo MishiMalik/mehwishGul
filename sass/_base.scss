@@ -1,0 +1,27 @@
+:root{
+    --primary-color:#4458dc;
+    --primary-color2:#854fee;
+    --title-color:#141313;
+    --text-color:#777777;
+    --color-black:#323232;
+    --color-grey-light-2:#cccccccc;
+    --color-grey-light-1:#ededed;
+    --color-grey-dark:#626262cc;
+    --shadow-color:0px 10px 30px rgba(118,85,225,0.3);
+    --box-shadow:0px 10px 30px rgba(57,56,61,0.205);
+
+    --font-main:'Lobster Two', cursive;
+    --font-second:'Roboto', sans-serif;
+    --font-name:'Red Rose', cursive;
+}
+html{ 
+    box-sizing: border-box;
+    }
+body{
+    background-color: var(--color-grey-light-1);
+    font-weight: 300;
+    color:black;
+    margin:0;
+    padding:0;
+    height:100%;
+}

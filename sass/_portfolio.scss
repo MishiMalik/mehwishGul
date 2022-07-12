@@ -1,0 +1,135 @@
+.portfolio{
+    background-color: white;
+    padding:2rem 14vw;
+    @media only screen and(max-width:600px){
+        padding:1rem 5vw;
+      }
+      @media only screen and(max-width:500px){
+        padding:1rem 10vw;
+      }
+      @media only screen and(max-width:342px){
+        padding:1rem 2vw;
+      }
+    
+    .state__list{
+        padding-left:4vw;
+        list-style: none;
+        display: flex;
+        @media only screen and(max-width:700px){
+            padding-left: 0rem;
+          }
+
+        &--item{
+            border:none;
+            background-color:white;
+            font-size:1rem;
+            text-transform: uppercase;
+            color:var(--primary-color2);
+            font-weight:var(--font-second);
+            font-weight:700;
+            margin-right:1rem;
+            outline: none;
+            cursor: pointer;
+            &:hover{
+                color:white;
+                background-color:var(--primary-color2);
+                font-weight: 400;
+                padding:.2rem .5rem;
+                border-radius:50px;
+            }
+            @media only screen and(max-width:750px){
+                font-size:.8rem;
+                margin-right:.5rem;
+              }
+              @media only screen and(max-width:600px){
+                font-size:.5rem;
+                margin-right:.2rem;
+              }
+        }
+        .active-port{
+            color:white;
+            background-color:var(--primary-color2);
+            font-weight: 400;
+            padding:.2rem .5rem;
+            border-radius:50px;
+           }
+    }
+    &__projects{
+        display: flex;
+        padding:1.5rem 0;
+        flex-wrap: wrap;
+        padding-left:4vw;
+        @media only screen and(max-width:800px){
+            padding-left:0vw;
+        }
+        @media only screen and(max-width:650px){
+            align-items: center;
+            justify-content: center;
+        }
+        &-item{
+            margin-bottom:.5rem;
+            &--picture{
+                .pic{
+                    width:17rem;
+                    object-fit: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-radius:5px 5px 0 0;
+                }
+            }
+            &:not(:last-child){
+                margin-right:.5rem;
+            }
+            &--text{
+                padding:1rem;
+                padding-top:0;
+                padding-left:.5rem;
+                box-shadow:0px .8rem .8rem var(--color-grey-light-2);
+                border-radius:0 0 5px 5px;
+                &-name{
+                    font-size:1rem;
+                    font-family: var(--font-second);
+                    font-weight: 500;
+                    & a{
+                        text-decoration: none;
+                        color:var(--primary-color2);
+                    }
+                }
+                &-state{
+                    font-size:1rem;
+                    font-family:var(--font-main);
+                }
+            }
+            @media only screen and(max-width:800px){
+               margin:1rem 20vw;
+               
+            }
+            @media only screen and(max-width:500px){
+                margin:1rem 10vw;
+             }
+             @media only screen and(max-width:400px){
+                margin:1rem 6vw;
+             }
+        }
+    }
+
+
+    .gallery__cards{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        &-card{
+            width: 33.33%;
+            padding: 10px;
+
+            
+            &--img{
+                width:100%;
+                height: auto;
+                padding: 10px;
+            }
+        }
+     }
+}
